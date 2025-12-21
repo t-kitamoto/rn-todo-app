@@ -1,5 +1,6 @@
 import { createHomeStyles } from '@/assets/styles/home.styles';
 import Header from '@/components/Header';
+import TodoInput from '@/components/TodoInput';
 import useTheme from '@/hooks/useTheme';
 import { LinearGradient } from 'expo-linear-gradient';
 import { StatusBar } from 'react-native';
@@ -18,6 +19,7 @@ export default function Index() {
       <StatusBar />
       <SafeAreaView style={homeStyles.safeArea}>
         <Header />
+        <TodoInput />
       </SafeAreaView>
     </LinearGradient>
   );
