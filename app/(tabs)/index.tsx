@@ -204,7 +204,11 @@ export default function Index() {
       colors={colors.gradients.background}
       style={homeStyles.container}
     >
-      <StatusBar />
+      <StatusBar
+        barStyle={colors.statusBarStyle}
+        backgroundColor={colors.bg}
+        translucent={false}
+      />
       <SafeAreaView style={homeStyles.safeArea}>
         <Header />
         <TodoInput />
